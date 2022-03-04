@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ejercicio17</title>
+</head>
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%2030%20EJERCFICIO/index.html">INICIO</a>
+    <h3>Ejercicio 17</h3>
+    <p>Ingresar un número y mostrar la suma de todos los pares e impares desde 0 hasta el número ingresado.</p>
+    <script>
+        var num, x, sumapar, sumaimpar;
+
+        alert("Ejercicio 16");
+
+        num = parseInt(prompt("Ingrese un numero"));
+
+        sumapar = 0;
+        sumaimpar = 0;
+
+        for (x = 1; x <= num; x++) {
+            if (x % 2 == 0) {
+                sumapar = sumapar + x;
+            } else {
+                sumaimpar = sumaimpar + x;
+            }
+        }
+        document.write("La suma de los numeros pares es: " + sumapar);
+        ""
+        document.write("La suma de los numeros impares es: " + sumaimpar);
+    </script>
+</body>
+
+</html>

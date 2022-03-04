@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/ejer10.css">
+    <title>Ejercicio10</title>
+</head>
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%2030%20EJERCFICIO/index.html">INICIO</a>
+    <H3>EJERCICIO N°10</H3>
+    <p>La suma de n números naturales, donde n es el numero limite que ingresa el usuario.</p>
+    <p id="resultado"></p>
+
+</body>
+<script>
+    let contador, suma, n;
+    alert("BIENVENIDO AL CONTADOR DIRIGIDO")
+    n = Number(prompt("INGRESE CUALQUIER NUMERO"))
+    contador = 0
+    suma = 0
+    do {
+        contador = contador + 1
+        suma = suma + contador
+    } while (contador <= n)
+    document.getElementById("resultado").innerHTML = "LA SUMA ES DE :" + suma;
+</script>
+
+</html>

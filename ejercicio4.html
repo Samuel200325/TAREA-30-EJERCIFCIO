@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ejercicio4</title>
+    <link rel="stylesheet" href="/css/ejer4.css">
+</head>
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%2030%20EJERCFICIO/index.html">INICIO</a>
+    <h2>Ejercicio N°4</h2>
+    <p>Hacer un programa para calcular el promedio de 3 notas, si el promedio es menor a 6.95 se lo considera REPROBADO caso contrario Aprobado</p>
+    <p id="nombreEstudiante"></p>
+    <p id="notaN1"></p>
+    <p id="notaN2"></p>
+    <p id="notaN3"></p>
+    <p id="promedio"></p>
+    <p id="respPro"></p>
+</body>
+<script>
+    let name;
+    let not1;
+    let not2;
+    let not3;
+    let prom;
+
+    alert("BIENVENIDO AL CALCULADOR DE PROMEDIOS")
+    name = prompt("INGRESE SU NOMBRE :")
+    not1 = Number(prompt("INGRESE SU PRIMER NOTA :"))
+    not2 = Number(prompt("INGRESE SU SEGUNDA NOTA :"))
+    not3 = Number(prompt("INGRESE SU TERCER NOTA :"))
+
+    prom = (not1 + not2 + not3) / 3
+    if (prom >= 6.95) {
+        document.getElementById("respPro").innerHTML = "LA NOTA DE :" + prom;
+        document.write("ES SUFICIENTE PARA APROBAR");
+    } else {
+        document.getElementById("respPro").innerHTML = "LA NOTA DE :" + prom;
+        document.write("NO ES SUFICIENTE PARA APROBAR");
+    }
+</script>
+
+</html>

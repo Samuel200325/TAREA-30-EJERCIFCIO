@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="/css/ejer7.css">
+    <title>Ejercicio7</title>
+</head>
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%2030%20EJERCFICIO/index.html">INICIO</a>
+    <h3>EJERCICIO N°7</h3>
+    <p>Mostrar el costo a pagar por una llamada telefónica, según la zona y la duración en minutos</p>
+    <p id="zona"></p>
+    <p id="dur"></p>
+    <p id="costo"></p>
+</body>
+<script>
+    var zonaEle, durLla, costoLla;
+    alert("BINVENIDO A LA CABINA TELEFONICA RANDOM")
+    alert("(1) ESTADOS UNIDOS 0.15$ ")
+    alert("(2) CANADA 0.14$ ")
+    alert("(3) ESPAÑA 0.25$")
+    alert("(4) COLOMBIA 0.05$")
+    alert("(5) VENEZUELA 0.10$")
+    alert("(6) MEXICO 0.11$")
+    alert("(7) ARGENTINA 0.12$")
+    alert("(8) PANAMA 0.08$")
+
+    zonaEle = Number(prompt("ESCOJA LA CLAVE HACIA DONDE QUIERA LLAMAR :"))
+
+    switch (zonaEle) {
+        case 1:
+            durLla = Number(prompt("¿CUANTO TIEMPO DURO LA LLAMADA?"))
+            costoLla = durLla * (0.15)
+            document.getElementById("zona").innerHTML = "ZONA A DONDE LLAMO : " + zonaEle;
+            document.getElementById("dur").innerHTML = "DURACION DE SU LLAMADA : " + durLla;
+            document.getElementById("costo").innerHTML = "SU TOTAL A PAGAR ES : " + costoLla + "$";
+            break;
+        case 2:
+            durLla = Number(prompt("¿CUANTO TIEMPO DURO LA LLAMADA?"))
+            costoLla = durLla * (0.14)
+            document.getElementById("zona").innerHTML = "ZONA A DONDE LLAMO : " + zonaEle;
+            document.getElementById("dur").innerHTML = "DURACION DE SU LLAMADA : " + durLla;
+            document.getElementById("costo").innerHTML = "SU TOTAL A PAGAR ES : " + costoLla + "$";
+            break;
+        case 3:
+            durLla = Number(prompt("¿CUANTO TIEMPO DURO LA LLAMADA?"))
+            costoLla = durLla * (0.25)
+            document.getElementById("zona").innerHTML = "ZONA A DONDE LLAMO : " + zonaEle;
+            document.getElementById("dur").innerHTML = "DURACION DE SU LLAMADA : " + durLla;
+            document.getElementById("costo").innerHTML = "SU TOTAL A PAGAR ES : " + costoLla + "$";
+            break;
+        case 4:
+            durLla = Number(prompt("¿CUANTO TIEMPO DURO LA LLAMADA?"))
+            costoLla = durLla * (0.05)
+            document.getElementById("zona").innerHTML = "ZONA A DONDE LLAMO : " + zonaEle;
+            document.getElementById("dur").innerHTML = "DURACION DE SU LLAMADA : " + durLla;
+            document.getElementById("costo").innerHTML = "SU TOTAL A PAGAR ES : " + costoLla + "$";
+            break;
+        case 5:
+            durLla = Number(prompt("¿CUANTO TIEMPO DURO LA LLAMADA?"))
+            costoLla = durLla * (0.10)
+            document.getElementById("zona").innerHTML = "ZONA A DONDE LLAMO : " + zonaEle;
+            document.getElementById("dur").innerHTML = "DURACION DE SU LLAMADA : " + durLla;
+            document.getElementById("costo").innerHTML = "SU TOTAL A PAGAR ES : " + costoLla + "$";
+            break;
+        case 6:
+            durLla = Number(prompt("¿CUANTO TIEMPO DURO LA LLAMADA?"))
+            costoLla = durLla * (0.11)
+            document.getElementById("zona").innerHTML = "ZONA A DONDE LLAMO : " + zonaEle;
+            document.getElementById("dur").innerHTML = "DURACION DE SU LLAMADA : " + durLla;
+            document.getElementById("costo").innerHTML = "SU TOTAL A PAGAR ES : " + costoLla + "$";
+            break;
+        case 7:
+            durLla = Number(prompt("¿CUANTO TIEMPO DURO LA LLAMADA?"))
+            costoLla = durLla * (0.12)
+            document.getElementById("zona").innerHTML = "ZONA A DONDE LLAMO : " + zonaEle;
+            document.getElementById("dur").innerHTML = "DURACION DE SU LLAMADA : " + durLla;
+            document.getElementById("costo").innerHTML = "SU TOTAL A PAGAR ES : " + costoLla + "$";
+            break;
+        case 8:
+            durLla = Number(prompt("¿CUANTO TIEMPO DURO LA LLAMADA?"))
+            costoLla = durLla * (0.08)
+            document.getElementById("zona").innerHTML = "ZONA A DONDE LLAMO : " + zonaEle;
+            document.getElementById("dur").innerHTML = "DURACION DE SU LLAMADA : " + durLla;
+            document.getElementById("costo").innerHTML = "SU TOTAL A PAGAR ES : " + costoLla + "$";
+            break;
+        default:
+            alert("CLAVE INVALIDA :(");
+            break;
+
+    }
+</script>
+
+</html>

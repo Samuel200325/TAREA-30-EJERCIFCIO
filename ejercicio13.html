@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ejercicio13</title>
+</head>
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%2030%20EJERCFICIO/index.html">INICIO</a>
+    <h3>Ejercicio 13</h3>
+    <p>Hacer un programa que muestre el área y perímetro de un círculo</p>
+    <p id="perimetro"></p>
+    <p id="area"></p>
+
+</body>
+<script>
+    var lad, rad, per, are;
+    alert("BIENVENIDO AL CALCULADOR DE AREA Y PERIMETRO DE UN CIRCULO")
+    rad = Number(prompt("INGRESE EL RADIO DE SU CIRCULO :"))
+    per = 2 * (3.1416) * rad;
+    are = (per * rad) / 2;
+
+    document.getElementById("perimetro").innerHTML = "EL PERIMETRO DEL CIRCULO ES DE : " + per + "cm";
+    document.getElementById("area").innerHTML = "EL AREA DEL CIRCULO ES DE : " + are + "  cm2";
+</script>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ejercicio16</title>
+</head>
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%2030%20EJERCFICIO/index.html">INICIO</a>
+    <h3>Ejercicio 16</h3>
+    <p>Elaborar un programa que permita ingresar 10 número enteros y muestre la cantidad de números pares e impares ingresados</p>
+    <script>
+        let pares = 0;
+        let impares = 0;
+        let cont = 1;
+        do {
+            cont = cont + 1;
+            numero = prompt("Ingrese un numero");
+            num = parseFloat(numero);
+            alert(num)
+            yaff = num % 2
+            if (yaff == 0) {
+                pares = pares + 1
+
+            } else {
+                impares = impares + 1
+
+            }
+
+        } while (cont < 11 && cont > 0);
+        alert("Pares:" + pares);
+        document.write("Pares:" + pares);
+        alert("Impares: " + impares);
+        document.write(" Impares: " + impares);
+    </script>
+</body>
+
+</html>

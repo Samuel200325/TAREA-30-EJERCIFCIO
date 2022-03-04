@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/ejer6.css">
+    <title>Ejercicio6</title>
+</head>
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%2030%20EJERCFICIO/index.html">INICIO</a>
+    <h2>EJERCICIO N°6</h2>
+    <p>Escribir un programa que nos indique si la letra ingresada es vocal o consonante</p>
+    <p id="letraEsc"> </p>
+    <p id="respuesta"> </p>
+</body>
+<script>
+    let letra1, resp;
+
+    alert("BIENVENIDO AL INDICADOR DE LETRAS CONSONATES Y VOCALES");
+    letra1 = prompt("INGRESE LA LETRA A COMPROBAR :")
+
+    document.getElementById("letraEsc").innerHTML = "LETRA A COMPROBAR :" + letra1;
+    switch (letra1) {
+        case "A":
+        case "a":
+            document.getElementById("respuesta").innerHTML = "COMPROBACION : ↓↓↓↓";
+            document.write("LA LETRA (A) ES UNA VOCAL");
+            break;
+        case "B":
+        case "b":
+            document.getElementById("respuesta").innerHTML = "COMPROBACION : ↓↓↓↓";
+            document.write("LA LETRA (E) ES UNA VOCAL");
+            break;
+        case "I":
+        case "i":
+            document.getElementById("respuesta").innerHTML = "COMPROBACION : ↓↓↓↓";
+            document.write("LA LETRA (I) ES UNA VOCAL");
+            break;
+        case "O":
+        case "o":
+            document.getElementById("respuesta").innerHTML = "COMPROBACION : ↓↓↓↓";
+            document.write("LA LETRA (O) ES UNA VOCAL");
+            break;
+        case "U":
+        case "u":
+            document.getElementById("respuesta").innerHTML = "COMPROBACION : ↓↓↓↓";
+            document.write("LA LETRA (U) ES UNA VOCAL");
+            break;
+        default:
+            document.getElementById("respuesta").innerHTML = "COMPROBACION : ↓↓↓↓";
+            document.write("LA LETRA INGRESADA ES UNA CONSONANTE");
+            break;
+    }
+</script>
+
+</html>

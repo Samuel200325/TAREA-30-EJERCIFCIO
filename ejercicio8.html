@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="/css/ejer8.css">
+    <title>Ejercicio8</title>
+</head>
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%2030%20EJERCFICIO/index.html">INICIO</a>
+    <h3>EJERCICIO N°8</h3>
+    <p>Realizar un programa que clasifiqué a partir de la nota si un estudiante está en alguno de estos criterios: De 0-2 : Necesita Reforzamiento; 3-4: Desaprobado; 5-7: Aprobado; 8-9: Excelente y 10: BECADO</p>
+    <p id="nameEst"></p>
+    <p id="notaEst"></p>
+    <p id="clasificacion"></p>
+</body>
+<script>
+    var nomEst, noteEst;
+
+    alert("BIENVENIDO AL CLASIFICADOR DE NOTAS")
+    nomEst = prompt("INGRESE EL NOMBRE DEL ESTUDIANTE A CLASIFICAR :");
+    noteEst = prompt("INGRESE LA NOTA OBTENIDA POR EL ESTUDIANTE A CLASIFICAR");
+
+    if (noteEst >= 0 && noteEst <= 2) {
+        document.getElementById("clasificacion").innerHTML = "EL ESTUDIANTE " + nomEst + "  NESECITA REFUERZO";
+    } else {
+        if (noteEst >= 3 && noteEst <= 4) {
+            document.getElementById("clasificacion").innerHTML = "EL ESTUDIANTE " + nomEst + "  ESTA REPROBADO";
+        } else {
+            if (noteEst >= 5 && noteEst <= 7) {
+                document.getElementById("clasificacion").innerHTML = "EL ESTUDIANTE " + nomEst + "  ESTA APROBADO";
+            } else {
+                if (noteEst >= 8 && noteEst <= 9) {
+                    document.getElementById("clasificacion").innerHTML = "EL ESTUDIANTE " + nomEst + "  TIENE UNA EXCELENTE NOTA";
+                } else {
+                    if (noteEst == 10) {
+                        document.getElementById("clasificacion").innerHTML = "EL ESTUDIANTE " + nomEst + "  ESTA BECADO A HARVARD";
+
+                    } else {
+                        alert("LA NOTA INGRESADA ES INCORRECTA, VUELVA A INTENTARLO")
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+</html>

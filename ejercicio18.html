@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ejercicico18</title>
+</head>
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%2030%20EJERCFICIO/index.html">INICIO</a>
+    <h3>Ejercicio18</h3>
+    <p>Hacer un algoritmo que muestre el promedio de varias notas o de N notas ingresadas, se debe definir el valor de N para conocer la cantidad de notas a ingresar.</p>
+    <br>
+    <p id="not1"></p>
+    <p id="not2"></p>
+    <p id="not3"></p>
+    <p id="not4"></p>
+    <p id="not5"></p>
+    <p id="not6"></p>
+    <p id="not7"></p>
+    <p id="not8"></p>
+    <p id="not9"></p>
+    <p id="not10"></p>
+    <br>
+    <p id="prom"></p>
+</body>
+<script>
+    let nI, n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, prome;
+    alert("BIENVENIDO AL CALCULADOR DE PROMEDIOS")
+    nI = Number(prompt("INGRESE LA CANTIDAD DE NOTAS OBTENIDAS :"));
+
+    switch (nI) {
+        case 1:
+            n1 = Number(prompt("INGRESE LA PRIMER NOTA"))
+            prome = n1 * (10) / 10
+            document.getElementById("not1").innerHTML = "SU PRIMER NOTA ES :" + n1;
+            document.getElementById("prom").innerHTML = "SU PROMEDIO ES DE :" + prome;
+            break;
+        case 2:
+            n1 = Number(prompt("INGRESE LA PRIMER NOTA"))
+            n2 = Number(prompt("INGRESE LA SEGUNDA NOTA"))
+            prome = (n1 + n2) * (10) / 20
+            document.getElementById("not1").innerHTML = "SU PRIMER NOTA ES :" + n1;
+            document.getElementById("not2").innerHTML = "SU SEGUNDA NOTA ES :" + n2;
+            document.getElementById("prom").innerHTML = "SU PROMEDIO ES DE :" + prome;
+            break;
+        case 3:
+            n1 = Number(prompt("INGRESE LA PRIMER NOTA"))
+            n2 = Number(prompt("INGRESE LA SEGUNDA NOTA"))
+            n3 = Number(prompt("INGRESE LA TERCERA NOTA"))
+            prome = (n1 + n2 + n3) * (10) / 30
+            document.getElementById("not1").innerHTML = "SU PRIMER NOTA ES :" + n1;
+            document.getElementById("not2").innerHTML = "SU SEGUNDA NOTA ES :" + n2;
+            document.getElementById("not3").innerHTML = "SU TERCER NOTA ES :" + n3;
+            document.getElementById("prom").innerHTML = "SU PROMEDIO ES DE :" + prome;
+            break;
+        case 4:
+            n1 = Number(prompt("INGRESE LA PRIMER NOTA"))
+            n2 = Number(prompt("INGRESE LA SEGUNDA NOTA"))
+            n3 = Number(prompt("INGRESE LA TERCERA NOTA"))
+            n4 = Number(prompt("INGRESE LA CUARTA NOTA"))
+            prome = (n1 + n2 + n3 + n4) * (10) / 40
+            document.getElementById("not1").innerHTML = "SU PRIMER NOTA ES :" + n1;
+            document.getElementById("not2").innerHTML = "SU SEGUNDA NOTA ES :" + n2;
+            document.getElementById("not3").innerHTML = "SU TERCER NOTA ES :" + n3;
+            document.getElementById("not4").innerHTML = "SU CUARTA NOTA ES :" + n4;
+            document.getElementById("prom").innerHTML = "SU PROMEDIO ES DE :" + prome;
+            break;
+        case 5:
+            n1 = Number(prompt("INGRESE LA PRIMER NOTA"))
+            n2 = Number(prompt("INGRESE LA SEGUNDA NOTA"))
+            n3 = Number(prompt("INGRESE LA TERCERA NOTA"))
+            n4 = Number(prompt("INGRESE LA CUARTA NOTA"))
+            n5 = Number(prompt("INGRESE LA QUINTA NOTA"))
+            prome = (n1 + n2 + n3 + n4 + n5) * (10) / 50
+            document.getElementById("not1").innerHTML = "SU PRIMER NOTA ES :" + n1;
+            document.getElementById("not2").innerHTML = "SU SEGUNDA NOTA ES :" + n2;
+            document.getElementById("not3").innerHTML = "SU TERCER NOTA ES :" + n3;
+            document.getElementById("not4").innerHTML = "SU CUARTA NOTA ES :" + n4;
+            document.getElementById("not5").innerHTML = "SU QUINTA NOTA ES :" + n5;
+            document.getElementById("prom").innerHTML = "SU PROMEDIO ES DE :" + prome;
+            break;
+        case 6:
+            n1 = Number(prompt("INGRESE LA PRIMER NOTA"))
+            n2 = Number(prompt("INGRESE LA SEGUNDA NOTA"))
+            n3 = Number(prompt("INGRESE LA TERCERA NOTA"))
+            n4 = Number(prompt("INGRESE LA CUARTA NOTA"))
+            n5 = Number(prompt("INGRESE LA QUINTA NOTA"))
+            n6 = Number(prompt("INGRESE LA SEXTA NOTA"))
+            prome = (n1 + n2 + n3 + n4 + n5 + n6) * (10) / 60
+            document.getElementById("not1").innerHTML = "SU PRIMER NOTA ES :" + n1;
+            document.getElementById("not2").innerHTML = "SU SEGUNDA NOTA ES :" + n2;
+            document.getElementById("not3").innerHTML = "SU TERCER NOTA ES :" + n3;
+            document.getElementById("not4").innerHTML = "SU CUARTA NOTA ES :" + n4;
+            document.getElementById("not5").innerHTML = "SU QUINTA NOTA ES :" + n5;
+            document.getElementById("not6").innerHTML = "SU SEXTA NOTA ES :" + n6;
+            document.getElementById("prom").innerHTML = "SU PROMEDIO ES DE :" + prome;
+            break;
+        case 7:
+            n1 = Number(prompt("INGRESE LA PRIMER NOTA"))
+            n2 = Number(prompt("INGRESE LA SEGUNDA NOTA"))
+            n3 = Number(prompt("INGRESE LA TERCERA NOTA"))
+            n4 = Number(prompt("INGRESE LA CUARTA NOTA"))
+            n5 = Number(prompt("INGRESE LA QUINTA NOTA"))
+            n6 = Number(prompt("INGRESE LA SEXTA NOTA"))
+            n7 = Number(prompt("INGRESE LA SEPTIMA NOTA"))
+            prome = (n1 + n2 + n3 + n4 + n5 + n6 + n7) * (10) / 70
+            document.getElementById("not1").innerHTML = "SU PRIMER NOTA ES :" + n1;
+            document.getElementById("not2").innerHTML = "SU SEGUNDA NOTA ES :" + n2;
+            document.getElementById("not3").innerHTML = "SU TERCER NOTA ES :" + n3;
+            document.getElementById("not4").innerHTML = "SU CUARTA NOTA ES :" + n4;
+            document.getElementById("not5").innerHTML = "SU QUINTA NOTA ES :" + n5;
+            document.getElementById("not6").innerHTML = "SU SEXTA NOTA ES :" + n6;
+            document.getElementById("not7").innerHTML = "SU SEPTIMA NOTA ES :" + n7;
+            document.getElementById("prom").innerHTML = "SU PROMEDIO ES DE :" + prome;
+            break;
+        case 8:
+            n1 = Number(prompt("INGRESE LA PRIMER NOTA"))
+            n2 = Number(prompt("INGRESE LA SEGUNDA NOTA"))
+            n3 = Number(prompt("INGRESE LA TERCERA NOTA"))
+            n4 = Number(prompt("INGRESE LA CUARTA NOTA"))
+            n5 = Number(prompt("INGRESE LA QUINTA NOTA"))
+            n6 = Number(prompt("INGRESE LA SEXTA NOTA"))
+            n7 = Number(prompt("INGRESE LA SEPTIMA NOTA"))
+            n8 = Number(prompt("INGRESE LA OCTAVA NOTA"))
+            prome = (n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8) * (10) / 80
+            document.getElementById("not1").innerHTML = "SU PRIMER NOTA ES :" + n1;
+            document.getElementById("not2").innerHTML = "SU SEGUNDA NOTA ES :" + n2;
+            document.getElementById("not3").innerHTML = "SU TERCER NOTA ES :" + n3;
+            document.getElementById("not4").innerHTML = "SU CUARTA NOTA ES :" + n4;
+            document.getElementById("not5").innerHTML = "SU QUINTA NOTA ES :" + n5;
+            document.getElementById("not6").innerHTML = "SU SEXTA NOTA ES :" + n6;
+            document.getElementById("not7").innerHTML = "SU SEPTIMA NOTA ES :" + n7;
+            document.getElementById("not8").innerHTML = "SU OCTAVA NOTA ES :" + n8;
+            document.getElementById("prom").innerHTML = "SU PROMEDIO ES DE :" + prome;
+            break;
+        case 9:
+            n1 = Number(prompt("INGRESE LA PRIMER NOTA"))
+            n2 = Number(prompt("INGRESE LA SEGUNDA NOTA"))
+            n3 = Number(prompt("INGRESE LA TERCERA NOTA"))
+            n4 = Number(prompt("INGRESE LA CUARTA NOTA"))
+            n5 = Number(prompt("INGRESE LA QUINTA NOTA"))
+            n6 = Number(prompt("INGRESE LA SEXTA NOTA"))
+            n7 = Number(prompt("INGRESE LA SEPTIMA NOTA"))
+            n8 = Number(prompt("INGRESE LA OCTAVA NOTA"))
+            n9 = Number(prompt("INGRESE LA NOVENA NOTA"))
+            prome = (n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9) * (10) / 90
+            document.getElementById("not1").innerHTML = "SU PRIMER NOTA ES :" + n1;
+            document.getElementById("not2").innerHTML = "SU SEGUNDA NOTA ES :" + n2;
+            document.getElementById("not3").innerHTML = "SU TERCER NOTA ES :" + n3;
+            document.getElementById("not4").innerHTML = "SU CUARTA NOTA ES :" + n4;
+            document.getElementById("not5").innerHTML = "SU QUINTA NOTA ES :" + n5;
+            document.getElementById("not6").innerHTML = "SU SEXTA NOTA ES :" + n6;
+            document.getElementById("not7").innerHTML = "SU SEPTIMA NOTA ES :" + n7;
+            document.getElementById("not8").innerHTML = "SU OCTAVA NOTA ES :" + n8;
+            document.getElementById("not9").innerHTML = "SU NOVENA NOTA ES :" + n9;
+            document.getElementById("prom").innerHTML = "SU PROMEDIO ES DE :" + prome;
+            break;
+        case 10:
+            n1 = Number(prompt("INGRESE LA PRIMER NOTA"))
+            n2 = Number(prompt("INGRESE LA SEGUNDA NOTA"))
+            n3 = Number(prompt("INGRESE LA TERCERA NOTA"))
+            n4 = Number(prompt("INGRESE LA CUARTA NOTA"))
+            n5 = Number(prompt("INGRESE LA QUINTA NOTA"))
+            n6 = Number(prompt("INGRESE LA SEXTA NOTA"))
+            n7 = Number(prompt("INGRESE LA SEPTIMA NOTA"))
+            n8 = Number(prompt("INGRESE LA OCTAVA NOTA"))
+            n9 = Number(prompt("INGRESE LA NOVENA NOTA"))
+            n10 = Number(prompt("INGRESE LA DECIMA NOTA"))
+            prome = (n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9 + n10) * (10) / 100
+            document.getElementById("not1").innerHTML = "SU PRIMER NOTA ES :" + n1;
+            document.getElementById("not2").innerHTML = "SU SEGUNDA NOTA ES :" + n2;
+            document.getElementById("not3").innerHTML = "SU TERCER NOTA ES :" + n3;
+            document.getElementById("not4").innerHTML = "SU CUARTA NOTA ES :" + n4;
+            document.getElementById("not5").innerHTML = "SU QUINTA NOTA ES :" + n5;
+            document.getElementById("not6").innerHTML = "SU SEXTA NOTA ES :" + n6;
+            document.getElementById("not7").innerHTML = "SU SEPTIMA NOTA ES :" + n7;
+            document.getElementById("not8").innerHTML = "SU OCTAVA NOTA ES :" + n8;
+            document.getElementById("not9").innerHTML = "SU NOVENA NOTA ES :" + n9;
+            document.getElementById("not10").innerHTML = "SU DECIMA NOTA ES :" + n10;
+            document.getElementById("prom").innerHTML = "SU PROMEDIO ES DE :" + prome;
+            break;
+        default:
+            alert("DEMASIADAS NOATS INGRESADAS (MAX 10 NOTAS)")
+    }
+</script>
+
+</html>

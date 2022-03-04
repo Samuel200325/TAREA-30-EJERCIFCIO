@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ejercicio12</title>
+</head>
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%2030%20EJERCFICIO/index.html">INICIO</a>
+    <h3>EJERCICIO N°12</h3>
+    <p>Ingrese la cantidad de alumnos aprobados y desaprobados de un curso, luego mostrar el porcentaje de estudiantes aprobados y el porcentaje de estudiantes desaprobados.</p>
+    <p id="tES"></p>
+    <p id="estAP"></p>
+    <p id="estDes"></p>
+</body>
+<script>
+    var eA, eD, tE, pA, pD;
+    alert("BIENVENIDO AL MOSTRADOR DE PORCENTAJES DE ESTUDINTES APROVADOS Y DESAPROVADOS");
+    eA = Number(prompt("INGRESE EL NUMERO DE ESTUDIANTES APROVADOS :"));
+    eD = Number(prompt("INGRESE EL NUMERO DE ESTUDIANTES DESAPROVADOS :"));
+
+    tE = eA + eD;
+    pA = (eA * 100) / (tE);
+    pD = (eD * 100) / (tE);
+    document.getElementById("tES").innerHTML = "TOTAL DE ESTUDIANTES :" + tE;
+    document.getElementById("estAP").innerHTML = "ESTUDIANTES APROVADOS :" + pA + "  %";
+    document.getElementById("estDes").innerHTML = "ESTUDIANTES NO APROVADOS :" + pD + "  %";
+</script>
+
+</html>

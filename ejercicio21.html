@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ejercicico21</title>
+</head>
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%2030%20EJERCFICIO/index.html">INICIO</a>
+    <h3>Ejercicico21</h3>
+    <p>Diseñe un algoritmo que lea un numero de 3 cifra y determine si es o no palindromono.</p>
+
+    <script>
+        cadena = prompt("Escriba un numero de 3 cifras");
+        if (cadena.length == "3") {
+            n1 = cadena.substr(0, 1);
+
+            n2 = cadena.substr(1, 1);
+
+            n3 = cadena.substr(2, 1);
+
+            if (n1 == n3) {
+                alert("Es un numero palindromo");
+                document.write(cadena, " ,Es un numero palindromo");
+            } else {
+                alert("No es un numero palindromo");
+                document.write(cadena, " ,No es un numero palindromo");
+            }
+        } else {
+            alert("Numero invalido");
+
+        }
+    </script>
+</body>
+
+</html>

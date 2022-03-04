@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ejercicio1</title>
+    <link rel="stylesheet" href="/css/ejer1.css">
+    <a href="/html/ejercicio1.html"></a>
+</head>
+
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%2030%20EJERCFICIO/index.html">INICIO</a>
+    <h2>Ejercicio N° 1</h2>
+    <p>Calcular el area de un rectangulo</p>
+    <p id="altoRectangulo"></p>
+    <p id="anchoRectangulo"></p>
+
+    <p id="areaRectangulo"></p>
+
+    <script>
+        var alto;
+        var ancho;
+
+        alto = prompt("Ingrese el alto de su rectangulo en cm:");
+        ancho = prompt("Ingrese el ancho de su rectangulo en cm");
+
+        area = alto * ancho
+
+        document.getElementById("altoRectangulo").innerHTML = "El alto de su rectangulo es de: " + alto + " cm";
+        document.getElementById("anchoRectangulo").innerHTML = "El ancho de su rectangulo es de: " + ancho + " cm";
+
+        document.getElementById("areaRectangulo").innerHTML = "El area de su rectangulo es de:" + area + " cm";
+    </script>
+</body>
+
+</html>

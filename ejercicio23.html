@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ejercicio23</title>
+</head>
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%2030%20EJERCFICIO/index.html">INICIO</a>
+    <h3>Ejercicio 22</h3>
+    <p>Realizar un programa que muestre la serie de Fibonacci con numeros menores 200 es decir x menor al 200</p>
+
+    <script>
+        var num = new Number();
+        var a = new Number();
+        var b = new Number();
+        var c = new Number();
+        var contador = new Number();
+        document.write("Ingrese número Límite: ", '<BR/>');
+        num = Number(prompt("Ingrese número Límite: "));
+        a = 0;
+        b = 1;
+        c = 0;
+        contador = 0;
+        while (contador < num) {
+            document.write(c, '<BR/>');
+            a = b;
+            b = c;
+            c = a + b;
+            contador = contador + 1;
+        }
+    </script>
+</body>
+
+</html>

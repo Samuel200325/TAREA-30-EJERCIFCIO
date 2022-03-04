@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ejercicio15</title>
+</head>
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%2030%20EJERCFICIO/index.html">INICIO</a>
+    <h3>Ejercicio 15</h3>
+    <p>Se pide ingresar el sueldo de un trabajador y su categoría, dependiendo de la categoría se le dará una bonificación en el neto a pagar. Bonificación por categoría: A = 10%; B = 20%; C = 30%; D = 50%</p>
+    <script>
+        paga = prompt("Ingrese su sueldo");
+
+        cat = prompt("Elija su categoria: A B C D");
+
+        if (cat == "A") {
+            por = (parseFloat(paga) * 10) / 100;
+            mejora = parseFloat(paga) + parseFloat(por);
+            document.write("Felicidades su sueldo actual es= ", mejora);
+
+        } else {
+            if (cat == "B") {
+                por = (parseFloat(paga) * 20) / 100;
+                mejora = parseFloat(paga) + parseFloat(por);
+                document.write("Felicidades su sueldo actual es= ", mejora);
+            } else {
+                if (cat == "C") {
+                    por = (parseFloat(paga) * 30) / 100;
+                    mejora = parseFloat(paga) + parseFloat(por);
+                    document.write("Felicidades su sueldo actual es= ", mejora);
+
+                } else {
+                    if (cat == "D") {
+                        por = (parseFloat(paga) * 40) / 100;
+                        mejora = parseFloat(paga) + parseFloat(por);
+                        document.write("Felicidades su sueldo actual es= ", mejora);
+                    } else {
+                        alert("Escriba un sueldo o una categoria correcta")
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

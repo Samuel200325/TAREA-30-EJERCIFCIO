@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ejercicio3</title>
+    <link rel="stylesheet" href="/css/ejer3.css">
+
+</head>
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%2030%20EJERCFICIO/index.html">INICIO</a>
+    <h2>Ejercicio N° 3</h2>
+    <p>Realizar un programa en el que se calcule la cuenta a pagar de un producto en base a su precio y cantidad después sacar el 10% de descuento para el total a pagar.</p>
+    <p id="nameProdu"></p>
+
+    <p id="numProdu"></p>
+
+    <p id="valorProdu"></p>
+
+    <p id="subTotal"></p>
+
+    <p id="descuento"></p>
+
+    <p id="Total"></p>
+</body>
+
+<script>
+    var nomPro;
+    var vuPro;
+    var valPro;
+    var subtotal;
+    var desc;
+    var total;
+
+    alert("BIENVENIDO POR FAVOR AYUDENOS CON LA SIGUIENTE INFORMACION");
+    nomPro = prompt("INGRESE EL NOMBRE DEL PRODUCTO :");
+    vuPro = Number(prompt("INGRESE CUANTOS/AS COMPRARA :"));
+    valPro = Number(prompt("INGRESE EL VALOR DEL PRODUCTO :"));
+    subtotal = vuPro * valPro;
+    desc = subtotal * (0.10);
+    total = subtotal - desc;
+
+    document.getElementById("nameProdu").innerHTML = "EL PRODUCTO QUE COMPRARA ES : " + nomPro;
+    document.getElementById("numProdu").innerHTML = "EL NUMERO DE PRODUCTOS QUE COMPRARA ES : " + vuPro;
+    document.getElementById("valorProdu").innerHTML = "EL COSTO UNITARIO DE SU PRODUCTO ES DE : " + valPro + "$";
+    document.getElementById("subTotal").innerHTML = "SUBTOTAL DE SU COMPRA :" + subtotal;
+    document.getElementById("descuento").innerHTML = "EL DESCUENTO DE SU COMPRA ES DE: " + desc;
+    document.getElementById("Total").innerHTML = "EL TOTAL A PAGAR ES DE: " + total + "$"
+</script>
+
+</html>

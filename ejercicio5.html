@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="/css/ejer5.css">
+    <title>Ejercicio 5</title>
+</head>
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%2030%20EJERCFICIO/index.html">INICIO</a>
+    <H2>EJERCICIO N° 5</H2>
+    <p>Realizar un programa en el que se ingresen los datos de un trabajador y nos de como resultado el sueldo que debe obtener en base a sus horas trabajadas</p>
+    <p id="nombreTrabajador"></p>
+    <p id="horasTrabajadas"></p>
+    <p id="valorHora"></p>
+    <br>
+    <p id="sueldo"></p>
+</body>
+<script>
+    let nameTra, hourTra, valueTra, Sueldo
+    alert("BIENVENIDO AL CALCULADOR DE SUELDOS :)")
+    nameTra = prompt("INGRESE LE NOMBRE DEL EMPLEADO :");
+    hourTra = Number(prompt("INGRESE LAS HORAS TRABAJADAS :"));
+    valueTra = Number(prompt("INGRESE CUANTO GANA POR HORA :"));
+
+    Sueldo = (hourTra * valueTra)
+    document.getElementById("nombreTrabajador").innerHTML = "NOMBRE DEL EMPLEADO :" + nameTra;
+    document.getElementById("horasTrabajadas").innerHTML = "HORAS TRABAJADAS POR EL EMPLEADO :" + hourTra;
+    document.getElementById("valorHora").innerHTML = "EL EMPLEADO GANA :" + valueTra + " POR LA HORA TRABAJADA";
+    document.getElementById("sueldo").innerHTML = "EL SUELDO TOTAL A RECIBIR PARA " + nameTra + "  ES DE :" + Sueldo + "$"
+</script>
+
+</html>

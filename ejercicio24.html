@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ejercicio24</title>
+</head>
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%2030%20EJERCFICIO/index.html">INICIO</a>
+    <h3>Ejercicio 23</h3>
+    <p>Hacer un programa que nos calcule la suma de los n primeros numeros pares siguientes al numero. Es decir; si insertamos un 5, nos haga la suma 6+8+10+12+14</p>
+
+    <script>
+        var x = new Number();
+        var contador = new Number();
+        var suma = new Number();
+        var n = new Number();
+
+        n = Number(prompt("Desde que número desea sumar"));
+        x = 0;
+        contador = 0;
+        for (x = n; x <= n; x++) {
+            document.write("El número inicial es: " + n + "<br>");
+            while (contador <= n) {
+                if (x % 2 == 0) {
+                    document.write(x, '<BR/>');
+                    suma = suma + x;
+                    contador = contador + 1;
+                }
+                x = x + 1;
+            }
+        }
+        document.write("La suma de los primeros números pares es: ", suma, '<BR/>');
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ejercicio14</title>
+</head>
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%2030%20EJERCFICIO/index.html">INICIO</a>
+    <h3>Ejercicio 14</h3>
+    <p>Ingresar tres números enteros y mostrar el mayor de ellos.</p>
+    <p id="n1"></p>
+    <p id="n2"></p>
+    <p id="n3"></p>
+    <p id="mayor"></p>
+</body>
+<script>
+    var num1, num2, num3, may;
+    alert("BIENVENIDO AL COMPROBADOR DE NUMEROS MAYORES")
+    num1 = Number(prompt("INGRESE EL PRIMER VALOR :"));
+    num2 = Number(prompt("INGRESE EL SEGUNDO VALOR :"));
+    num3 = Number(prompt("INGRESE EL TERCER VALOR :"));
+
+    document.getElementById("n1").innerHTML = "VALOR UNO :" + num1;
+    document.getElementById("n2").innerHTML = "VALOR DOS :" + num2;
+    document.getElementById("n3").innerHTML = "VALOR TRES :" + num3;
+
+    if (num1 > num2 && num2 > num3) {
+        document.getElementById("mayor").innerHTML = "EL NUMERO MAYOR ES :" + num1;
+    } else {
+        if (num2 > num1 && num1 > num3) {
+            document.getElementById("mayor").innerHTML = "EL NUMERO MAYOR ES :" + num2;
+        } else {
+            document.getElementById("mayor").innerHTML = "EL NUMERO MAYOR ES :" + num3;
+        }
+    }
+</script>
+
+</html>
